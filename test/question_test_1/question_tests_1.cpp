@@ -6,7 +6,10 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
+TEST_CASE("testing value returns")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(get_earned_points(3) == 3);
+	REQUIRE(get_earned_points(9) == 45);
+	REQUIRE(get_earned_points(11) == 110);
+	REQUIRE(get_earned_points(20) == 300);
 }

@@ -1,6 +1,7 @@
 #include "question3.h"
 
-bool test_config()
+double get_fahrenheit(double celsius) 
 {
-    return true;
+    double fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+    return fahrenheit;
 }
